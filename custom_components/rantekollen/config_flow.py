@@ -1,8 +1,8 @@
 """Config flow för Räntekollen."""
 from homeassistant import config_entries
+from homeassistant.helpers import selector
 import aiohttp
 from bs4 import BeautifulSoup
-
 from . import DOMAIN
 
 BANKS_URL = "https://www.konsumenternas.se/konsumentstod/jamforelser/lan--betalningar/lan/jamfor-borantor/"
@@ -36,9 +36,12 @@ class RantekollenConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         banks = await fetch_banks()
         if not banks:
             banks = ["Ingen bank hittad"]
+
         return self.async_show_form(
             step_id="user",
-            data_schema=self.hass.helpers.config_validation.Schema({
-                "bank": self.hass.helpers.config_validation.Select(banks)
-            })
+            data_schema={
+                "bank": selector.SelectSelector(
+                    options=banks
+                )
+            }
         )
