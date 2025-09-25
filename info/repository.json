@@ -5,7 +5,7 @@
     "url": "https://github.com/danielorneling/rantekollen",
     "changelog": "https://github.com/danielorneling/rantekollen/releases",
     "release_info": "https://github.com/danielorneling/rantekollen/releases/tag/1.0.0",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Hämta aktuella listräntor från Konsumenternas med bankval vid setup.",
     "tags": ["sensor"],
     "domains": ["sensor"]
