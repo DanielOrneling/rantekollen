@@ -1,7 +1,7 @@
 {
     "domain": "rantekollen",
     "name": "Räntekollen",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "documentation": "https://github.com/dittanvandarnamn/rantekollen",
     "requirements": ["beautifulsoup4"],
     "dependencies": [],
