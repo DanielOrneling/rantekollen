@@ -1,0 +1,12 @@
+{
+    "domain": "rantekollen",
+    "name": "Räntekollen",
+    "version": "1.0.0",
+    "documentation": "https://github.com/dittanvandarnamn/rantekollen",
+    "requirements": ["beautifulsoup4"],
+    "dependencies": [],
+    "codeowners": ["@DanielOrneling"],
+    "config_flow": true,
+    "iot_class": "cloud_polling"
+  }
+  
